@@ -3,7 +3,7 @@
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    margin-left: 50px;
+    margin: auto;
     border: rgb(255, 255, 255) 5px solid;
     animation-name: animation-tete;
     animation-duration: 6.5s;
@@ -49,31 +49,31 @@ h2 {
 #barre_contact {
 
     width: 140px;
-    margin-left: -7px;
+
 }
 
 #barre_comp {
 
     width: 220px;
-    margin-left: -5px;
+
 }
 
 #barre_hard {
 
     width: 200px;
-    margin-left: -7px;
+
 }
 
 #barre_soft {
 
     width: 195px;
-    margin-left: -7px;
+
 }
 
 #barre_lang {
 
     width: 147px;
-    margin-left: -7px;
+
 }
 
 #barre_dev {
@@ -89,12 +89,13 @@ h2 {
 }
 
 .CONTACT {
-    margin-left: 45px;
+    margin-left: 35px;
+    margin-right: 35px;
 }
 
 .front_back {
 
-
+    text-align: center;
     font-size: 16px;
 }
 
@@ -108,11 +109,13 @@ a {
 }
 
 .qualité {
-
+    text-align: center;
     font-size: 16px;
 }
 
 .qualité_liste {
+    list-style-position: inside;
+    text-align: center;
     font-size: 12px;
 }
 
@@ -274,12 +277,14 @@ body {
 
     aside {
         width: 100%;
+        font-size: large;
+        text-align: center;
     }
 }
 
 
 
-body {
+/* body {
     @media (min-width: 721px) and (max-width: 1500px) {
         #boite {
             flex-direction: column;
@@ -294,4 +299,13 @@ body {
         }
     }
 
+} */
+
+#image {
+    text-align: center;
+}
+
+.element {
+    text-align: center;
+    list-style-position: inside;
 }
