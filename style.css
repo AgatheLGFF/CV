@@ -1,0 +1,297 @@
+#img {
+
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-left: 50px;
+    border: rgb(255, 255, 255) 5px solid;
+    animation-name: animation-tete;
+    animation-duration: 6.5s;
+    animation-iteration-count: infinite;
+}
+
+aside {
+
+    background: #163853;
+
+    width: 400px;
+    margin-top: 0px;
+    color: rgb(255, 255, 255);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+ul {
+    text-align: left;
+
+}
+
+h1 {
+    margin-bottom: -10px;
+    color: #163853;
+}
+
+
+hr {
+    margin-top: 1px;
+}
+
+h2 {
+    margin-bottom: 1px;
+
+}
+
+.barre {
+
+    width: 200px;
+}
+
+#barre_contact {
+
+    width: 140px;
+    margin-left: -7px;
+}
+
+#barre_comp {
+
+    width: 220px;
+    margin-left: -5px;
+}
+
+#barre_hard {
+
+    width: 200px;
+    margin-left: -7px;
+}
+
+#barre_soft {
+
+    width: 195px;
+    margin-left: -7px;
+}
+
+#barre_lang {
+
+    width: 147px;
+    margin-left: -7px;
+}
+
+#barre_dev {
+    width: 45px;
+    margin-top: -15px;
+    margin-left: 40px;
+    background-color: #163853;
+    padding: 1.3px;
+    animation-name: animation-barre;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+.CONTACT {
+    margin-left: 45px;
+}
+
+.front_back {
+
+
+    font-size: 16px;
+}
+
+li {
+    font-size: 10px;
+    margin-left: -20px;
+}
+
+a {
+    color: rgb(255, 255, 255);
+}
+
+.qualité {
+
+    font-size: 16px;
+}
+
+.qualité_liste {
+    font-size: 12px;
+}
+
+.projet {
+    color: #163853;
+}
+
+#boite {
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+#boite1 {
+    margin-left: 10px;
+}
+
+#boite2 {
+    margin-top: 0px;
+}
+
+#nom {
+
+    color: #163853;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    animation-name: animation-dynamique;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+
+}
+
+#dev_full {
+
+    font-size: 16px;
+    margin-left: 40px;
+}
+
+body {
+    margin: 0px;
+}
+
+.barre_separative {
+    border-bottom: 500px;
+}
+
+.li_formation {
+    font-size: 15px;
+}
+
+.text_formation {
+    font-size: 20px;
+}
+
+.annee {
+    margin-left: 60px;
+
+}
+
+body {
+    @media (min-width: 320px) and (max-width: 720px) {
+        #boite {
+            flex-direction: row;
+        }
+    }
+}
+
+header {
+    margin-bottom: 30px;
+
+}
+
+@keyframes animation-dynamique {
+    0% {
+        color: #163853;
+        left: 0px;
+        top: 0px;
+    }
+
+
+    30% {
+        color: rgb(143, 116, 140);
+        left: 200px;
+        top: 0px;
+    }
+
+
+    60% {
+        color: rgb(70, 79, 101);
+        left: 200px;
+        top: 0px;
+    }
+
+
+    100% {
+        color: #163853;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 720px) {
+    #boite {
+        flex-direction: column;
+    }
+}
+
+
+@keyframes animation-barre {
+    0% {
+        margin-left: 35px;
+    }
+
+    50% {
+        margin-left: 210px;
+    }
+
+    100% {
+        margin-left: 35px;
+    }
+}
+
+@keyframes animation-tete {
+    0% {
+
+        border: rgb(255, 255, 255) 5px solid;
+
+    }
+
+
+    50% {
+
+        border: rgb(29, 29, 29) 5px solid;
+        /*border: rgb(242, 5, 5) 5px solid;
+          
+        ou sinon changer en noir la couleur du cadre de base et le passer en blanc pendant l'animation*/
+    }
+
+
+    100% {
+
+        border: rgb(255, 255, 255) 5px solid;
+
+    }
+}
+
+body {
+    @media (min-width: 0px) and (max-width: 720px) {
+        #boite {
+            flex-direction: column;
+
+        }
+
+    }
+
+    header {
+        margin-right: 30px;
+    }
+
+    aside {
+        width: 100%;
+    }
+}
+
+
+
+body {
+    @media (min-width: 721px) and (max-width: 1500px) {
+        #boite {
+            flex-direction: column;
+
+        }
+
+        aside {
+            width: 400px;
+            height: 1015px;
+            margin-left: -25px;
+            border-right: 0;
+        }
+    }
+
+}
